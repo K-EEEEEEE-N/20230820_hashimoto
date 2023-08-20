@@ -66,15 +66,17 @@ header a {
 }
 .news {
     width: 100%;
-    height: 450px;
+    height: 500px;
     position: relative;
+    background-color: #1491A3;
 }
 .news__news {
     font-size: 15px;
     color: #A00055;
     font-family: 'Handlee',cursive;
-    position: relative;
+    position: absolute;
     left: 320px;
+    top: 0;
     display: inline-block;
     margin-bottom: 10px;
 }
@@ -83,14 +85,18 @@ header a {
     color: #555555;
     position: absolute;
     left: 320px;
+    top: 20px;
+    margin: auto;
     font-weight: bold;
 }
 .news__list {
     width: 50%;
-    height: 300px;
+    height: 70%;
     margin: 60px auto;
     border-top: solid 3px #C8C8C8;
     border-bottom: solid 3px #C8C8C8;
+    position: absolute;
+    left: 320px;
 }
 .news__list__item {
     display: flex;
@@ -153,6 +159,11 @@ header a {
 .service {
     width: 100%;
     height: 550px;
+}
+.service__left {
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
     position: relative;
 }
 .service__service {
@@ -161,7 +172,6 @@ header a {
     font-family: 'Handlee', cursive;
     margin-bottom: 10px;
     position: absolute;
-    left: 200px;
     top: 55px;
 }
 .service__title {
@@ -169,7 +179,6 @@ header a {
     color: #555555;
     font-weight: bold;
     position: absolute;
-    left: 200px;
     top: 80px;
 }
 .service img {
@@ -180,17 +189,16 @@ header a {
     display: flex;
     position: absolute;
     top: 120px;
-    left: 200px;
 }
 .service__card1 {
     background-color: #A10055;
-    width: 450px;
+    width: 400px;
     height: 350px;
     position: relative;
 }
 .service__card1__img {
     position: absolute;
-    left: 160px;
+    left: 135px;
     top: 40px;
 }
 .service__card1__title {
@@ -198,20 +206,20 @@ header a {
     font-weight: bold;
     color: white;
     position: absolute;
-    left: 190px;
+    left: 165px;
     top: 190px;
 }
 .service__card1__text {
     font-size: 15px;
     color: white;
     position: absolute;
-    left: 50px;
+    left: 25px;
     top: 230px;
     line-height: 25px;
 }
 .service__card2 {
     background-color: #A24478;
-    width: 450px;
+    width: 430px;
     height: 175px;
     display: flex;
     position: relative;
@@ -239,7 +247,7 @@ header a {
 }
 .service__card3 {
     background-color: #A1748D;
-    width: 450px;
+    width: 430px;
     height: 175px;
     display: flex;
     position: relative;
@@ -277,20 +285,23 @@ header a {
     font-family: 'Handlee', cursive;
     margin-bottom: 10px;
     position: absolute;
-    left: 150px;
     top: 35px;
+    left: 0;
 }
 .blog__title {
     font-size: 20px;
     color: #555555;
     font-weight: bold;
     position: absolute;
-    left: 150px;
+    left: 0;
     top: 60px;
 }
 .blog__flex__item {
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
 }
 .blog__card {
     width: 300px;
@@ -448,9 +459,9 @@ header a {
     font-size: 18px;
     color: #555555;
     font-weight: bold;
-    position: absolute;
-    left: 450px;
-    top: 70px;
+    display: block;
+    text-align: center;
+    padding-top: 60px;
 }
 .border-right {
     width: 50%;
@@ -459,7 +470,14 @@ header a {
     position: absolute;
     top: 120px;
 }
-.contect__btn {
+.contact__btn__center {
+    width: 26%;
+    height: 60%;
+    margin: 0 37%;
+    text-align: center;
+    position: relative;
+}
+.contact__btn {
     width: 250px;
     height: 65px;
     background: linear-gradient(90deg,#F7007A,#A20051);
@@ -471,8 +489,8 @@ header a {
     font-size: 17px;
     color: white;
     position: absolute;
-    left: 510px;
-    top: 190px;
+    left: 0;
+    top: 120px;
     box-shadow: 0 10px 0 #70003E;
 }
 .contact__btn__icon {
@@ -494,9 +512,13 @@ footer {
     position: relative;
 }
 .footer__text {
+    width: 100%;
     font-size: 12px;
     color: #555555;
     position: absolute;
-    left: 510px;
-    top: 25px;
+    top: 20px;
+    text-align: center;
+}
+* {
+    outline: 1px solid red ! important
 }
