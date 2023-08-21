@@ -66,17 +66,23 @@ header a {
 }
 .news {
     width: 100%;
-    height: 500px;
+    height: 470px;
     position: relative;
     background-color: #1491A3;
+}
+.news__content__center {
+    width: 700px;
+    margin: 0 auto;
+}
+.news__title__list__center {
+    width: 700px;
+    height: 80px;
+    position: relative;
 }
 .news__news {
     font-size: 15px;
     color: #A00055;
     font-family: 'Handlee',cursive;
-    position: absolute;
-    left: 320px;
-    top: 0;
     display: inline-block;
     margin-bottom: 10px;
 }
@@ -84,19 +90,16 @@ header a {
     font-size: 20px;
     color: #555555;
     position: absolute;
-    left: 320px;
-    top: 20px;
+    top: 30px;
     margin: auto;
     font-weight: bold;
 }
 .news__list {
-    width: 50%;
+    width: 100%;
     height: 70%;
-    margin: 60px auto;
     border-top: solid 3px #C8C8C8;
     border-bottom: solid 3px #C8C8C8;
-    position: absolute;
-    left: 320px;
+    padding-bottom: 25px;
 }
 .news__list__item {
     display: flex;
@@ -123,8 +126,9 @@ header a {
 }
 .about {
     width: 100%;
-    height: 400px;
+    height: 390px;
     background-color: #F2F2F2;
+    padding-top: 50px;
 }
 .about__about {
     font-size: 15px;
@@ -161,9 +165,9 @@ header a {
     height: 550px;
 }
 .service__left {
-    width: 80%;
+    width: 830px;
     height: 100%;
-    margin: 0 10%;
+    margin: 0 auto;
     position: relative;
 }
 .service__service {
@@ -188,7 +192,7 @@ header a {
 .service__flex__item {
     display: flex;
     position: absolute;
-    top: 120px;
+    top: 130px;
 }
 .service__card1 {
     background-color: #A10055;
@@ -275,7 +279,7 @@ header a {
 }
 .blog {
     width: 100%;
-    height: 550px;
+    height: 535px;
     background-color: #F2F2F2;
     position: relative;
 }
@@ -364,6 +368,12 @@ header a {
     right: 30px;
     bottom: 40px;
 }
+.blog__more__btn__center {
+    width: 205px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
 .blog__more__btn {
     width: 200px;
     height: 30px;
@@ -376,13 +386,16 @@ header a {
     font-size: 15px;
     color: #A00055;
     padding-top: 20px;
-    position: absolute;
-    bottom: 40px;
-    left: 550px;
 }
 .company {
     width: 100%;
-    height: 800px;
+    height: 820px;
+    position: relative;
+}
+.company__content__center {
+    width: 673px;
+    height: 520px;
+    margin: 0 auto;
     position: relative;
 }
 .company__company {
@@ -390,23 +403,21 @@ header a {
     color: #A00055;
     font-family: 'Handlee', cursive;
     position: absolute;
-    left: 300px;
-    top: 45px;
+    top: 70px;
 }
 .company__title {
     font-size: 20px;
     color: #555555;
     font-weight: bold;
     position: absolute;
-    left: 300px;
-    top: 70px;
+    top: 95px;
+
 }
 .company__table {
     border: solid 1px #C2C2C2;
     line-height: 50px;
     position: absolute;
-    left: 300px;
-    top:120px
+    top: 150px;
 }
 .company__table th {
     width: 200px;
@@ -432,27 +443,33 @@ header a {
     display: flex;
     position: absolute;
     bottom: 0;
+    position: relative;
 }
 .company__content__item {
     width: 50%;
     height: 100%;
     position: relative;
+    margin: 0 auto;
 }
 .company__content__img {
     width: 100%;
     height: 100%;
 }
+.company__content__title__center {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 128px;
+    text-align: center;
+}
 .company__content__title {
     font-size: 25px;
     font-weight: bold;
     color: white;
-    position: absolute;
-    left: 250px;
-    top: 140px;
 }
 .contact {
     width: 100%;
-    height: 350px;
+    height: 340px;
     position: relative;
 }
 .contact__title {
@@ -461,20 +478,21 @@ header a {
     font-weight: bold;
     display: block;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 .border-right {
     width: 50%;
     height: 40px;
     border-right: solid 2px #A30F51;
     position: absolute;
-    top: 120px;
+    top: 125px;
 }
 .contact__btn__center {
-    width: 26%;
-    height: 60%;
-    margin: 0 37%;
-    text-align: center;
+    width: 255px;
+    height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    top: 90px;
     position: relative;
 }
 .contact__btn {
@@ -489,8 +507,6 @@ header a {
     font-size: 17px;
     color: white;
     position: absolute;
-    left: 0;
-    top: 120px;
     box-shadow: 0 10px 0 #70003E;
 }
 .contact__btn__icon {
@@ -520,5 +536,5 @@ footer {
     text-align: center;
 }
 * {
-    outline: 1px solid red ! important
+    outline: 1px solid red !important;
 }
